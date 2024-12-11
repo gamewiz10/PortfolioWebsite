@@ -1,0 +1,47 @@
+body{
+    background-image: url("../Circuits.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white; 
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3rem;
+}
+p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.topnav{
+    background-color: #041d7b;
+    overflow: hidden;
+}
+
+.topnav a{
+    float: left;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #80eaf2;
+}
+
+.topnav a.active{
+    background-color: rgb(0, 12, 12);
+    color: white;
+}
