@@ -34,8 +34,10 @@ p {
     background-color: #041d7b;
     overflow: hidden;
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1000;
+    padding: 10px;
 }
 
 .topnav a{
@@ -63,25 +65,110 @@ p {
     }
 }
 
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.about-section {
+    flex: 1; /* Occupies half the space */
+    padding: 50px;
+    color: rgb(247, 245, 245);
+    box-sizing: border-box;
+}
+.about-section h2 {
+    color: black
+}
+
 .hero-image {
+    flex: 1;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
     url("../CNURing.jpg");
-    background-origin: content-box;
-    height: 100vh;
-    width: 40%;
-    z-index: 1;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    right: 0;
+    background-position: center;
+    height: 100vh; /* Match the height of the about section */
+    box-sizing: border-box;
 }
 
 .hero-text {
     text-align: center;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+.projects-title {
+    color: rgb(255, 254, 254);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.column {
+    flex: 1 1 300px;
+    max-width: 30%;
+    padding: 10px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    text-align: center;
+    max-width: 300px; /* Restrict the card width */
+}
+
+.card img{
+    width: 100%;
+    
+    object-fit: cover; /* Keep image proportions */
+    display: block;
+    border-radius: 8px 8px 0 0; /* Optional: Round the top corners */
+}
+
+
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    background-color: #041d7b;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+ .card .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    color: black;
+}
+
+.card .card-container p {
+    color: black;
+}
+.card .card-container h2 {
+    color: black;
+}
+
+.card .card-container title {
+    color: black;
 }
