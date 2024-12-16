@@ -1,4 +1,4 @@
-fetch('about.html')
+fetch('Big Texts/introduction.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('about-section').innerHTML = data;
