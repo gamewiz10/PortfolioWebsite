@@ -173,3 +173,137 @@ p {
 .card .card-container title {
     color: black;
 }
+
+.aboutName {
+    text-align: center;
+}
+
+.aboutPage {
+    margin-top: 70px;
+    font-size: 2rem;
+    color: white; /* Text color */
+    text-shadow: 
+        -1px -1px 0 #000, /* Top-left shadow */
+        1px -1px 0 #000,  /* Top-right shadow */
+        -1px 1px 0 #000,  /* Bottom-left shadow */
+        1px 1px 0 #000;   /* Bottom-right shadow */
+}
+
+.myUl {
+    display: inline-block;
+    text-align: left;
+    font-size: 2rem;
+}
+.bullets{
+    margin-top: 50px;
+    margin-left: 200px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 7fr 1fr;
+    column-gap: 20px;
+}
+.bulletImage{
+    border: 3px solid #000;
+    width: 500px;
+    height: auto;
+    display: block;
+    margin-right: 400px;
+}
+
+
+.aboutCNU {
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 7fr 1fr;
+    column-gap: 5px;
+}
+.CNUImage{
+    border: 3px solid #000;
+    width: 400px;
+    
+}
+.CNUText{
+    text-align: right;
+}
+
+.aboutWCUSA {
+    margin-top: 150px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 6fr 1fr;
+    column-gap: 5px;
+}
+
+.WCUSAImage{
+    border: 3px solid #000;
+    width: 600px;
+    margin: 0
+}
+
+.WCUSAText{
+    text-align: right;
+}
+
+.aboutKinsale{
+    margin-top: 150px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 6fr 1fr;
+    column-gap: 5px;
+}
+.KinsaleImage {
+    border: 3px solid #000;
+    width: 500px;
+    margin: 0
+}
+.KinsaleText{
+    text-align: right;
+}
+
+.aboutKarate{
+    margin-top: 150px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 6fr 1fr;
+    column-gap: 5px;
+}
+
+.KarateImage{
+    border: 3px solid #000;
+    width: 500px;
+    margin: 0
+}
+
+.KarateText {
+    text-align: right;
+}
+.contactInfo{
+    margin-top: 70px;
+    font-size: 2rem;
+    color: white; /* Text color */
+    text-shadow: 
+        -1px -1px 0 #000, /* Top-left shadow */
+        1px -1px 0 #000,  /* Top-right shadow */
+        -1px 1px 0 #000,  /* Bottom-left shadow */
+        1px 1px 0 #000;   /* Bottom-right shadow */
+}
+.contactParent{
+    margin-top: 150px;
+    display: grid;
+    align-items: center;
+    grid-template-columns:  1fr 1fr;
+    column-gap: 5px;
+}
+
+.contactImage{
+    width: 700px;
+    border: 3px solid #000;
+    margin: 0;
+}
+.contactText{
+    text-align: center;
+}
+.contactDownload{
+    align-self: center;
+}
