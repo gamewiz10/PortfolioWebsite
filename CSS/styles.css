@@ -1,6 +1,6 @@
 body{
     font-size: 1rem;
-    background-image: url("../Circuits.jpg");
+    background-image: url("../images/Circuits.jpg");
     background-repeat: repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -279,6 +279,8 @@ body{
 .KarateText {
     text-align: right;
 }
+
+/* contact page pc */
 .contactInfo{
     margin-top: 70px;
     font-size: 2rem;
@@ -321,40 +323,33 @@ body{
 
     .hero-container {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         height: auto;
-        box-sizing: border-box;
-        padding: 0;
-        margin-bottom: 5rem;
+        width: 100%;
     }
     
     
     .hero-text {
-        flex: 60%;
-        max-width: 60%;
-        color: white;
-        padding: 2rem;
-        position: relative;
-        right: 10%;
-        box-sizing: border-box;
-        text-align: left;
-        font-size: .5rem;
+        font-size: 1rem; /* Adjust text size */
+        text-align: center; /* Center-align the text */
+        width: 80%; /* Allow text to span 80% of the screen */
+        max-width: 1200px; /* Optional: Limit maximum width */
+        margin: 0 auto; /* Center the text block */
     }
     
     .hero-image {
-        flex: 40%;
-        height: auto;
-        position: relative; 
-        right: 15%;
+        flex: 100%;
+        height: auto; 
         box-sizing: border-box;
     }
     .hero-image img {
         border: 3px solid #000;
-        width: 10rem; 
-        height: auto; 
-        object-fit: cover; 
+        width: 15rem;
+        height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
     }
     
     
@@ -366,6 +361,7 @@ body{
         transform: translate(-50%, -50%);
         text-align: center;
         color: white;
+        box-sizing: border-box;
     }
 
 
@@ -455,28 +451,28 @@ body{
         font-size: 1rem;
         color: white; /* Text color */
         text-shadow: 
-            -1px -1px 0 #000, /* Top-left shadow */
-            1px -1px 0 #000,  /* Top-right shadow */
-            -1px 1px 0 #000,  /* Bottom-left shadow */
-            1px 1px 0 #000;   /* Bottom-right shadow */
+            -1px -1px 0 #000, 
+            1px -1px 0 #000, 
+            -1px 1px 0 #000,  
+            1px 1px 0 #000;  
     }
     
     .myUl {
-        display: inline-block;
+        display: block;
         text-align: left;
         font-size: 1rem;
     }
     .bullets{
-        margin-top: 10px;
-        margin-left: 200px;
+        margin-top: 2rem;
+        margin-left: 1rem;
         display: grid;
         align-items: center;
         grid-template-columns: 7fr 1fr;
-        column-gap: 20px;
+        column-gap: 5px;
     }
     .bulletImage{
         border: 3px solid #000;
-        width: 500px;
+        width: 15rem;
         height: auto;
         display: block;
         margin-right: 400px;
@@ -484,70 +480,137 @@ body{
     
     
     .aboutCNU {
-        margin-top: 50px;
-        display: grid;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        grid-template-columns: 1fr 7fr 1fr;
-        column-gap: 5px;
+        flex-direction: column;
+        height: auto;
+        row-gap: 10px;
     }
     .CNUImage{
+        flex: 100%;
         border: 3px solid #000;
-        width: 400px;
+        width: 15rem;
+        height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
         
     }
     .CNUText{
-        text-align: right;
+        flex: 1;
+        font-size: 1rem;
+        text-align: center;
+        
     }
     
     .aboutWCUSA {
-        margin-top: 150px;
-        display: grid;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        grid-template-columns: 1fr 6fr 1fr;
-        column-gap: 5px;
+        flex-direction: column;
+        height: auto;
+        row-gap: 10px;
     }
     
     .WCUSAImage{
+        flex: 100%;
         border: 3px solid #000;
-        width: 600px;
-        margin: 0
+        width: 20rem;
+        height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
     }
     
     .WCUSAText{
-        text-align: right;
+        flex: 1;
+        font-size: 1rem;
+        text-align: center;
     }
     
     .aboutKinsale{
-        margin-top: 150px;
-        display: grid;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        grid-template-columns: 1fr 6fr 1fr;
-        column-gap: 5px;
+        flex-direction: column;
+        height: auto;
+        row-gap: 10px;
     }
     .KinsaleImage {
+        flex: 100%;
         border: 3px solid #000;
-        width: 500px;
-        margin: 0
+        width: 15rem;
+        height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
     }
     .KinsaleText{
-        text-align: right;
+        flex: 1;
+        font-size: 1rem;
+        text-align: center;
     }
     
     .aboutKarate{
-        margin-top: 150px;
-        display: grid;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        grid-template-columns: 1fr 6fr 1fr;
-        column-gap: 5px;
+        flex-direction: column;
+        height: auto;
+        row-gap: 10px;
     }
     
     .KarateImage{
+        flex: 100%;
         border: 3px solid #000;
-        width: 500px;
-        margin: 0
+        width: 20rem;
+        height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
     }
     
     .KarateText {
-        text-align: right;
+        flex: 1;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* contact page */
+
+    .contactInfo{
+        margin-top: 70px;
+        font-size: 1rem;
+        color: white; /* Text color */
+        text-shadow: 
+            -1px -1px 0 #000, /* Top-left shadow */
+            1px -1px 0 #000,  /* Top-right shadow */
+            -1px 1px 0 #000,  /* Bottom-left shadow */
+            1px 1px 0 #000;   /* Bottom-right shadow */
+    }
+    .contactParent{
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        row-gap: 10px;
+    }
+    
+    .contactImage{
+        flex: 100%;
+        border: 3px solid #000;
+        width: 20rem;
+        height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
+    }
+    .contactText{
+        text-align: center;
+    }
+    .contactDownload{
+        align-self: center;
     }
 }
