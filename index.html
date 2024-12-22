@@ -6,28 +6,39 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
-<body>
+<body class="homePage">
+
+  <!-- top navigation -->
     <div class="topnav">
         <a class="active" href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
     </div>
 
-    <div class = "hero-section" >
-        <div class="about-section" id = "about-section">
-            
-        </div>
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1>I am Joseph Bell</h1>
-                <p>I am a Software Developer</p>
-                <input type="button" id = "downloadResume" value = "DOWNLOAD RESUME">
+    <div class = "hero-container" >
+        <div class="hero-text">
+            <p>Hello! My name is Joseph Bell. </p>
+            <p> I am a software developer who has received a Bachelors degree in Computer Science from Christpher Newport University and 
+                an Associate degree in Computer Science from Thomas Neslon Community College.</p>
+            <p>I am passionate about fullstack development, as well as mobile, cloud, and database development, to name a few.</p>
+            <p>I hope you are delighted with what you find on here my portfolio website</p>
+          </div>
+
+          <div class = "hero-image">
+            <img src="CNURing.jpg" alt="CNURing" class = "cnuRing">
+            <div class="hero-image-text">
+              <h1>I am Joseph Bell</h1>
+              <p>I am a Software Developer</p>
+              <input type="button" id = "downloadResume" value = "DOWNLOAD RESUME">
             </div>
-        </div>
+          </div>
     </div>
-      
+
+
+    <div class = "projects">
       <h2 class ="projects-title">My Projects</h2>
       <div class="row">
+
         <div class="column">
           <div class="card">
             <img src="Tron_Video_Game._Lightcycles.jpg" alt="Tron" style="width:100%">
@@ -64,6 +75,7 @@
           </div>
         </div>
       </div>
+    </div>
       <script src="script.js"></script> 
       <script src="download.js"></script>
 </body>

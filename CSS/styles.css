@@ -1,35 +1,24 @@
 body{
+    font-size: 1rem;
     background-image: url("../Circuits.jpg");
     background-repeat: repeat;
     background-size: cover;
     background-attachment: fixed;
     font-family: Arial, sans-serif;
     color: white; 
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
-/* @media screen and (min-width: 1024px) {
-    body{
-        background-repeat: no-repeat;
-    }
-} */
 
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 3rem;
+.homePage {
+    margin-top: 70px;
+    /* font-size: 2rem; */
+    padding: 2vw;
+    color: white; /* Text color */
+
 }
-p {
-    text-align: center;
-    font-size: 1.2rem;
-}
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-}
+
+
 .topnav{
     background-color: #041d7b;
     overflow: hidden;
@@ -38,6 +27,11 @@ p {
     width: 100%;
     z-index: 1000;
     padding: 10px;
+    text-shadow: 
+        -1px -1px 0 #000, /* Top-left shadow */
+        1px -1px 0 #000,  /* Top-right shadow */
+        -1px 1px 0 #000,  /* Bottom-left shadow */
+        1px 1px 0 #000;   /* Bottom-right shadow */
 }
 
 .topnav a{
@@ -47,6 +41,7 @@ p {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    text-align: center;
 }
 
 .topnav a:hover {
@@ -57,54 +52,68 @@ p {
     background-color: rgb(0, 12, 12);
     color: white;
 }
-@media screen and (max-width: 600px)  {
-    .topnav a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
 
-.hero-section {
+
+.hero-container {
     display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 5rem;
+    text-shadow: 
+        -1px -1px 0 #000, /* Top-left shadow */
+        1px -1px 0 #000,  /* Top-right shadow */
+        -1px 1px 0 #000,  /* Bottom-left shadow */
+        1px 1px 0 #000;   /* Bottom-right shadow */
 }
 
-.about-section {
-    flex: 1; /* Occupies half the space */
-    padding: 50px;
-    color: rgb(247, 245, 245);
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+    color: white;
+    padding: 2rem;
     box-sizing: border-box;
-}
-.about-section h2 {
-    color: black
+    text-align: left;
+    font-size: 2rem;
 }
 
 .hero-image {
     flex: 1;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url("../CNURing.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Match the height of the about section */
+    height: auto;
+    position: relative; 
     box-sizing: border-box;
 }
+.hero-image img {
+    border: 3px solid #000;
+    width: 50rem; 
+    height: auto; 
+    object-fit: cover; 
+}
 
-.hero-text {
-    text-align: center;
-    position: relative;
+
+.hero-image-text{
+    font-size: 1rem;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
     color: white;
 }
+
+
+
+
 
 .projects-title {
     color: rgb(255, 254, 254);
     text-align: center;
-    margin-top: 20px;
-    font-size: 24px; 
+    margin-top: 2rem;
+    font-size: 2rem; 
     font-weight: bold;
 }
 
@@ -132,11 +141,11 @@ p {
 
 .card img{
     width: 100%;
-    
     object-fit: cover; /* Keep image proportions */
     display: block;
     border-radius: 8px 8px 0 0; /* Optional: Round the top corners */
 }
+
 
 
 
@@ -163,17 +172,9 @@ p {
     color: black;
 }
 
-.card .card-container p {
-    color: black;
-}
-.card .card-container h2 {
-    color: black;
-}
 
-.card .card-container title {
-    color: black;
-}
 
+/* about page */
 .aboutName {
     text-align: center;
 }
@@ -306,4 +307,247 @@ p {
 }
 .contactDownload{
     align-self: center;
+}
+
+/* mobile devices */
+@media screen and (max-width: 480px) {
+
+    .topnav a {
+        float: left;
+        font-size: 13px;
+        text-align: center;
+        padding: 10px 8px;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        text-align: center;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0;
+        margin-bottom: 5rem;
+    }
+    
+    
+    .hero-text {
+        flex: 60%;
+        max-width: 60%;
+        color: white;
+        padding: 2rem;
+        position: relative;
+        right: 10%;
+        box-sizing: border-box;
+        text-align: left;
+        font-size: .5rem;
+    }
+    
+    .hero-image {
+        flex: 40%;
+        height: auto;
+        position: relative; 
+        right: 15%;
+        box-sizing: border-box;
+    }
+    .hero-image img {
+        border: 3px solid #000;
+        width: 10rem; 
+        height: auto; 
+        object-fit: cover; 
+    }
+    
+    
+    .hero-image-text{
+        font-size: .4rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+
+
+
+    #downloadResume {
+        font-size: .5rem; 
+        padding: 0.1rem .1rem; 
+    }
+
+
+/* projects section */
+    .projects-title {
+        color: rgb(255, 254, 254);
+        text-align: center;
+        margin-top: 1rem;
+        font-size: .8rem; 
+        font-weight: bold;
+        text-shadow: 
+        -1px -1px 0 #000, /* Top-left shadow */
+        1px -1px 0 #000,  /* Top-right shadow */
+        -1px 1px 0 #000,  /* Bottom-left shadow */
+        1px 1px 0 #000;   /* Bottom-right shadow */6
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    .column {
+        flex: 1 1 10px;
+        max-width: 30%;
+        padding: 0px;
+    }
+    
+    .card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        text-align: center;
+        max-width: 100%; /* Restrict the card width */
+    }
+    
+    .card img{
+        width: 100%;
+        object-fit: cover; /* Keep image proportions */
+        display: block;
+        border-radius: 8px 8px 0 0; /* Optional: Round the top corners */
+    }
+    
+    
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px 16px;
+        color: white;
+        background-color: #041d7b;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    
+    .button:hover {
+        background-color: #555;
+    }
+     .card .card-container {
+        font-size: .5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        color: black;
+    }
+    
+    /* about section */
+    .aboutName {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .aboutPage {
+        margin-top: 70px;
+        font-size: 1rem;
+        color: white; /* Text color */
+        text-shadow: 
+            -1px -1px 0 #000, /* Top-left shadow */
+            1px -1px 0 #000,  /* Top-right shadow */
+            -1px 1px 0 #000,  /* Bottom-left shadow */
+            1px 1px 0 #000;   /* Bottom-right shadow */
+    }
+    
+    .myUl {
+        display: inline-block;
+        text-align: left;
+        font-size: 1rem;
+    }
+    .bullets{
+        margin-top: 10px;
+        margin-left: 200px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 7fr 1fr;
+        column-gap: 20px;
+    }
+    .bulletImage{
+        border: 3px solid #000;
+        width: 500px;
+        height: auto;
+        display: block;
+        margin-right: 400px;
+    }
+    
+    
+    .aboutCNU {
+        margin-top: 50px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 7fr 1fr;
+        column-gap: 5px;
+    }
+    .CNUImage{
+        border: 3px solid #000;
+        width: 400px;
+        
+    }
+    .CNUText{
+        text-align: right;
+    }
+    
+    .aboutWCUSA {
+        margin-top: 150px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 6fr 1fr;
+        column-gap: 5px;
+    }
+    
+    .WCUSAImage{
+        border: 3px solid #000;
+        width: 600px;
+        margin: 0
+    }
+    
+    .WCUSAText{
+        text-align: right;
+    }
+    
+    .aboutKinsale{
+        margin-top: 150px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 6fr 1fr;
+        column-gap: 5px;
+    }
+    .KinsaleImage {
+        border: 3px solid #000;
+        width: 500px;
+        margin: 0
+    }
+    .KinsaleText{
+        text-align: right;
+    }
+    
+    .aboutKarate{
+        margin-top: 150px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 6fr 1fr;
+        column-gap: 5px;
+    }
+    
+    .KarateImage{
+        border: 3px solid #000;
+        width: 500px;
+        margin: 0
+    }
+    
+    .KarateText {
+        text-align: right;
+    }
 }
