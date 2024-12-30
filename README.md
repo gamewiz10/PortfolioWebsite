@@ -3,7 +3,8 @@
 ## Overview
 This is a personal portfolio website designed to showcase my skills, projects, and professional experience. Built with HTML, CSS, and JavaScript, this site serves as a dynamic hub for my work and achievements. The project will be continuously updated to reflect my ongoing growth and development as a developer.
 
-
+## Public Access
+simply follow this url: (gamewiz10.github.io/PortfolioWebsite)
 
 ## Technologies Used
 - **HTML**: To structure the content of the website.
