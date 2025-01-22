@@ -8,7 +8,7 @@ function downloadResume(filename, filepath) {
 }
 
 document.getElementById("downloadResume").addEventListener("click", function () {
-                let filename = "Joseph_A_Bell_Resume_Main_rf.docx";
-                let filepath = "Joseph_A_Bell_Resume_Main_rf.docx";
+                let filename = "Joseph_A_Bell_Resume_Main_.docx";
+                let filepath = "Joseph_A_Bell_Resume_Main_.docx";
                 downloadResume(filename, filepath);
             });
