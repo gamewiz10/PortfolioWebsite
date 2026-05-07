@@ -281,6 +281,40 @@ body{
     margin-left: 5pc;
 }
 
+.aboutHowmet{
+    margin-top: 150px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 6fr 1fr;
+    column-gap: 5px;
+}
+.HowmetImage {
+    border: 3px solid #000;
+    width: 500px;
+    margin: 0
+}
+.HowmetText{
+    text-align: left;
+    margin-left: 5pc;
+}
+
+.aboutYouDecide{
+    margin-top: 150px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 6fr 1fr;
+    column-gap: 5px;
+}
+.YouDecideImage {
+    border: 3px solid #000;
+    width: 500px;
+    margin: 0
+}
+.YouDecideText{
+    text-align: left;
+    margin-left: 5pc;
+}
+
 .aboutKarate{
     margin-top: 150px;
     display: grid;
@@ -298,6 +332,106 @@ body{
 .KarateText {
     text-align: left;
     margin-left: 5pc;
+}
+
+/* certifications page */
+.certsPage {
+    margin-top: 70px;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.certsTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.certsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+    padding: 0 4rem 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.certCard {
+    background-color: rgba(4, 29, 123, 0.75);
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.certCard h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.certCardLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.certCardLink:hover .certCard {
+    border-color: #80eaf2;
+    cursor: pointer;
+}
+
+.certsFeatured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 0 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.certImageWindow {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #000;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.certImageWindow img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.certLink {
+    color: #80eaf2;
+    text-decoration: none;
+}
+
+.certLink:hover {
+    text-decoration: underline;
+}
+
+.certIssuer {
+    font-style: italic;
+    margin-top: -0.5rem;
+    margin-bottom: 0.75rem;
+    opacity: 0.85;
+    font-size: 1rem;
 }
 
 /* contact page pc */
@@ -588,6 +722,52 @@ body{
         text-align: center;
     }
     
+    .aboutHowmet{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        row-gap: 10px;
+    }
+    .HowmetImage{
+        flex: 100%;
+        border: 3px solid #000;
+        width: 15rem;
+        height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
+    }
+    .HowmetText{
+        flex: 1;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .aboutYouDecide{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        row-gap: 10px;
+    }
+    .YouDecideImage{
+        flex: 100%;
+        border: 3px solid #000;
+        width: 15rem;
+        height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
+    }
+    .YouDecideText{
+        flex: 1;
+        font-size: 1rem;
+        text-align: center;
+    }
+
     .aboutKarate{
         margin-top: 20px;
         display: flex;
@@ -597,7 +777,7 @@ body{
         height: auto;
         row-gap: 10px;
     }
-    
+
     .KarateImage{
         flex: 100%;
         border: 3px solid #000;
@@ -611,6 +791,19 @@ body{
         flex: 1;
         font-size: 1rem;
         text-align: center;
+    }
+
+    /* certifications page */
+    .certsPage {
+        font-size: 1rem;
+    }
+    .certsFeatured {
+        grid-template-columns: 1fr;
+        padding: 0 1rem 1rem;
+    }
+    .certsGrid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem 2rem;
     }
 
     /* contact page */
